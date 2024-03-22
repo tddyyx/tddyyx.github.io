@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import banner from "vite-plugin-banner";
 import pkg from "./package.json" assert { type: "json" };
 import { resolve } from "path";
+import autoprefixer from "autoprefixer";
 
 const license = [
   "/*!\n",
@@ -26,6 +27,11 @@ export default defineConfig({
         entryFileNames: `assets/[name].js`,
         assetFileNames: `assets/[name].[ext]`,
       },
+    },
+  },
+  css: {
+    postcss: {
+      plugins: [autoprefixer({})],
     },
   },
   plugins: [banner(license)],
