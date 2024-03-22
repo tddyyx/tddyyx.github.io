@@ -1,11 +1,17 @@
 ## 作業するとき
 
 ```
-yarn run vite dev
+npm run dev
 ```
 
 ## ビルドするとき
 
 ```
-yarn run vite build
+npm run build
+```
+
+## 成果物のプレビュー
+
+```
+npm run preview
 ```

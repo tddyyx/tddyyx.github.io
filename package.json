@@ -4,7 +4,9 @@
   "type": "module",
   "version": "5.1.4",
   "scripts": {
-    "start": "gulp watch"
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "description": "Creative is a stylish one page HTML theme for Bootstrap.",
   "keywords": [
