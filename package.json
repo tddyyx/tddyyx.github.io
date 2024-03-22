@@ -1,6 +1,7 @@
 {
   "title": "Creative",
   "name": "startbootstrap-creative",
+  "type": "module",
   "version": "5.1.4",
   "scripts": {
     "start": "gulp watch"
