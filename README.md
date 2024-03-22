@@ -1,11 +1,11 @@
 ## 作業するとき
 
 ```
-yarn run gulp watch
+yarn run vite dev
 ```
 
 ## ビルドするとき
 
 ```
-yarn run gulp build
+yarn run vite build
 ```
