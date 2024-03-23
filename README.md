@@ -1,11 +1,17 @@
 ## 作業するとき
 
 ```
-yarn run gulp watch
+npm run dev
 ```
 
 ## ビルドするとき
 
 ```
-yarn run gulp build
+npm run build
+```
+
+## 成果物のプレビュー
+
+```
+npm run preview
 ```

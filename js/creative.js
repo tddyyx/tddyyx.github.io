@@ -1,8 +1,8 @@
-(function($) {
+(function ($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (
       location.pathname.replace(/^\//, "") ==
         this.pathname.replace(/^\//, "") &&
@@ -13,10 +13,10 @@
       if (target.length) {
         $("html, body").animate(
           {
-            scrollTop: target.offset().top - 72
+            scrollTop: target.offset().top - 72,
           },
           1000,
-          "easeInOutExpo"
+          "easeInOutExpo",
         );
         return false;
       }
@@ -24,18 +24,18 @@
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $(".js-scroll-trigger").click(function() {
+  $(".js-scroll-trigger").click(function () {
     $(".navbar-collapse").collapse("hide");
   });
 
   // Activate scrollspy to add active class to navbar items on scroll
   $("body").scrollspy({
     target: "#mainNav",
-    offset: 75
+    offset: 75,
   });
 
   // Collapse Navbar
-  var navbarCollapse = function() {
+  var navbarCollapse = function () {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-scrolled");
     } else {
@@ -56,10 +56,10 @@
     gallery: {
       enabled: true,
       navigateByImgClick: true,
-      preload: [0, 1]
+      preload: [0, 1],
     },
     image: {
-      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-    }
+      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+    },
   });
 })(jQuery); // End of use strict
