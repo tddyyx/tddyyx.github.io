@@ -19,11 +19,9 @@ export default defineConfig({
     outDir: "./",
     rollupOptions: {
       input: {
-        ["creative"]: resolve(__dirname, "js/creative.js"),
-        ["creative.css"]: resolve(__dirname, "css/creative.css"),
+        creative: resolve(__dirname, "js/creative.js"),
       },
       output: {
-        banner: license,
         entryFileNames: `assets/[name].js`,
         assetFileNames: `assets/[name].[ext]`,
       },
@@ -34,5 +32,5 @@ export default defineConfig({
       plugins: [autoprefixer({})],
     },
   },
-  plugins: [banner(license)],
+  plugins: [banner({ content: license, outDir: "./", verify: true })],
 });
